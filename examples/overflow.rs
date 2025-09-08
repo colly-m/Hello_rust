@@ -8,5 +8,9 @@ fn main() {
     println!("u32 max: {}, x: {}", u32::MAX, x);
 
     // u32::checked_add - return None on overflow
+    let x = u32::checked_add(u32::MAX, 1);
+    println!("checked add: {:?}", x);
     // u32::wrapping_add - explicitly allow overflow
+    let x = u32::wrapping_add(u32::MAX, 1);
+    println!("wrapping add: {:?}", x);
 }
