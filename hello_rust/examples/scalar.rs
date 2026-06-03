@@ -53,7 +53,7 @@ fn main() {
 
     // min to max
     let i_max = i32::MAX;
-    let i_min = u32::MIN;
+    let u_min = u32::MIN;
     println!("i max: {i_max}");
-    println!("u min: {i_min}");
+    println!("u min: {u_min}");
 }

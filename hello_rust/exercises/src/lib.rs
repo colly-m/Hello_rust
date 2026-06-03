@@ -193,6 +193,7 @@ pub fn exercise_2() {
     // println!("{}", s);
 }
 
+
 pub fn exercise_3() {
     let s = "rust".to_string();
     take(s);
@@ -246,6 +247,47 @@ pub fn sum(nums: &[&str]) -> Result<u32, String> {
         total += num;
     }
     Ok(total)
+}
+
+
+pub fn first(t: (u32, i32)) -> u32 {
+    t.0
+    // Turning function into a generic function that works for any type
+}
+
+pub fn last(t: (u32, i32)) -> i32 {
+    t.1
+    // Turning function into a generic function that works for any type
+    todo!();
+    }
+}
+
+#[derive(Debug)]
+pub struct Rectangle {
+    pub top: u32,
+    pub left: u32,
+    pub width: u32,
+    pub height: u32,
+    // Turn this struct into a generic struct that works for any type
+    todo!();
+    pub top: T,
+    pub left: T,
+    pub width: T,
+    pub height: T,
+    pub Rectangle {
+        top: T,
+        left: T,
+        width: T,
+        height: T,
+    }
+    pub fn new(top: T, left: T, width: T, height: T) -> Rectangle<T> {
+        Rectangle {
+            top,
+            left,
+            width,
+            height,
+        }
+    }
 }
 
 
